@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<program>
+  <sym id="4" name="test5c"/>
+  <block>
+    <decls>
+      <var_decl>
+        <type name="integer" size="4" isFloat="0"/>
+        <sym id="5" name="aaa"/>
+      </var_decl>
+      <var_decl>
+        <type name="integer" size="4" isFloat="0"/>
+        <sym id="6" name="bbb"/>
+      </var_decl>
+    </decls>
+    <stmts>
+      <if>
+        <varref>
+          <sym id="5" name="aaa"/>
+        </varref>
+        <WRITE>
+          <exprList>
+            <varref>
+              <sym id="5" name="aaa"/>
+            </varref>
+          </exprList>
+        </WRITE>
+        <compound>
+          <while>
+            <expr>
+              <varref>
+                <sym id="5" name="aaa"/>
+              </varref>
+              <op value="LE"/>
+              <INTEGER value="5"/>
+            </expr>
+            <compound>
+              <assign>
+                <varref>
+                  <sym id="5" name="aaa"/>
+                </varref>
+                <expr>
+                  <varref>
+                    <sym id="5" name="aaa"/>
+                  </varref>
+                  <op value="-"/>
+                  <INTEGER value="1"/>
+                </expr>
+              </assign>
+              <WRITE>
+                <exprList>
+                  <varref>
+                    <sym id="5" name="aaa"/>
+                  </varref>
+                  <varref>
+                    <sym id="6" name="bbb"/>
+                  </varref>
+                </exprList>
+              </WRITE>
+            </compound>
+          </while>
+        </compound>
+      </if>
+    </stmts>
+  </block>
+</program>
