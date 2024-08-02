@@ -1,5 +1,5 @@
-# PascalCompiler
-A Compiler for (a slightly simpler version of) Pascal. Written in C, Bison, and Flex
+# PascalToXmlCompiler
+A (slightly simpler version of) Pascal to XML compiler. Written in C, Bison, and Flex
 
 ## Dependencies
 - Flex
